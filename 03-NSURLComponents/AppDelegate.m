@@ -16,7 +16,26 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    NSString *URLString = @"http://www.baidu.com";
+    NSURLComponents *components = [NSURLComponents componentsWithString:URLString];
+    NSString *host = components.host;
+    NSLog(@"%@", host);
+    components.host = @"www.jianshu.com";
+    /**
+     *
+     @property (nullable, copy) NSString *scheme; // Attempting to set the scheme with an invalid scheme string will cause an exception.
+     @property (nullable, copy) NSString *user;
+     @property (nullable, copy) NSString *password;
+     @property (nullable, copy) NSString *host;
+     @property (nullable, copy) NSNumber *port; // Attempting to set a negative port number will cause an exception.
+     @property (nullable, copy) NSString *path;
+     @property (nullable, copy) NSString *query;
+     @property (nullable, copy) NSString *fragment;
+     */
+    NSURL *jsURL = [components URL];
+    NSLog(@"%@", jsURL);
+    
     return YES;
 }
 
