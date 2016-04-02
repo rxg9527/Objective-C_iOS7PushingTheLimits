@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C0019FE1CAF91FB00CD29EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0019FD1CAF91FB00CD29EC /* main.m */; };
+		0C001A011CAF91FB00CD29EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C001A001CAF91FB00CD29EC /* AppDelegate.m */; };
+		0C001A041CAF91FB00CD29EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C001A031CAF91FB00CD29EC /* ViewController.m */; };
+		0C001A071CAF91FB00CD29EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C001A051CAF91FB00CD29EC /* Main.storyboard */; };
+		0C001A091CAF91FB00CD29EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C001A081CAF91FB00CD29EC /* Assets.xcassets */; };
+		0C001A0C1CAF91FB00CD29EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C001A0A1CAF91FB00CD29EC /* LaunchScreen.storyboard */; };
 		0C19310D1CB37D66009EC30A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C19310C1CB37D66009EC30A /* main.m */; };
 		0C1931101CB37D66009EC30A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C19310F1CB37D66009EC30A /* AppDelegate.m */; };
 		0C1931131CB37D66009EC30A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1931121CB37D66009EC30A /* ViewController.m */; };
@@ -24,6 +30,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C0019FA1CAF91FB00CD29EC /* 03-NSURLComponents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "03-NSURLComponents.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C0019FD1CAF91FB00CD29EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C0019FF1CAF91FB00CD29EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0C001A001CAF91FB00CD29EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0C001A021CAF91FB00CD29EC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0C001A031CAF91FB00CD29EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0C001A061CAF91FB00CD29EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0C001A081CAF91FB00CD29EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C001A0B1CAF91FB00CD29EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0C001A0D1CAF91FB00CD29EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C1931081CB37D66009EC30A /* Objective-C_iOS7PushingTheLimits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Objective-C_iOS7PushingTheLimits.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C19310C1CB37D66009EC30A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0C19310E1CB37D66009EC30A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -50,6 +66,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0C0019F71CAF91FB00CD29EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0C1931051CB37D66009EC30A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -67,11 +90,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C0019FB1CAF91FB00CD29EC /* 03-NSURLComponents */ = {
+			isa = PBXGroup;
+			children = (
+				0C0019FF1CAF91FB00CD29EC /* AppDelegate.h */,
+				0C001A001CAF91FB00CD29EC /* AppDelegate.m */,
+				0C0019FC1CAF91FB00CD29EC /* Supporting Files */,
+			);
+			path = "03-NSURLComponents";
+			sourceTree = "<group>";
+		};
+		0C0019FC1CAF91FB00CD29EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C001A021CAF91FB00CD29EC /* ViewController.h */,
+				0C001A031CAF91FB00CD29EC /* ViewController.m */,
+				0C001A051CAF91FB00CD29EC /* Main.storyboard */,
+				0C001A081CAF91FB00CD29EC /* Assets.xcassets */,
+				0C001A0A1CAF91FB00CD29EC /* LaunchScreen.storyboard */,
+				0C001A0D1CAF91FB00CD29EC /* Info.plist */,
+				0C0019FD1CAF91FB00CD29EC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		0C1930FF1CB37D66009EC30A = {
 			isa = PBXGroup;
 			children = (
 				0C19310A1CB37D66009EC30A /* 02-毛玻璃效果 */,
 				0C19312C1CB3C1BC009EC30A /* 03-关联引用 */,
+				0C0019FB1CAF91FB00CD29EC /* 03-NSURLComponents */,
 				0C1931091CB37D66009EC30A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +129,7 @@
 			children = (
 				0C1931081CB37D66009EC30A /* Objective-C_iOS7PushingTheLimits.app */,
 				0C19312B1CB3C1BC009EC30A /* 03-关联引用.app */,
+				0C0019FA1CAF91FB00CD29EC /* 03-NSURLComponents.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +189,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0C0019F91CAF91FB00CD29EC /* 03-NSURLComponents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C001A101CAF91FB00CD29EC /* Build configuration list for PBXNativeTarget "03-NSURLComponents" */;
+			buildPhases = (
+				0C0019F61CAF91FB00CD29EC /* Sources */,
+				0C0019F71CAF91FB00CD29EC /* Frameworks */,
+				0C0019F81CAF91FB00CD29EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "03-NSURLComponents";
+			productName = "03-NSURLComponents";
+			productReference = 0C0019FA1CAF91FB00CD29EC /* 03-NSURLComponents.app */;
+			productType = "com.apple.product-type.application";
+		};
 		0C1931071CB37D66009EC30A /* Objective-C_iOS7PushingTheLimits */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C19311F1CB37D66009EC30A /* Build configuration list for PBXNativeTarget "Objective-C_iOS7PushingTheLimits" */;
@@ -183,6 +249,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Yuen-iMac";
 				TargetAttributes = {
+					0C0019F91CAF91FB00CD29EC = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					0C1931071CB37D66009EC30A = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -206,11 +275,22 @@
 			targets = (
 				0C1931071CB37D66009EC30A /* Objective-C_iOS7PushingTheLimits */,
 				0C19312A1CB3C1BC009EC30A /* 03-关联引用 */,
+				0C0019F91CAF91FB00CD29EC /* 03-NSURLComponents */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0C0019F81CAF91FB00CD29EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C001A0C1CAF91FB00CD29EC /* LaunchScreen.storyboard in Resources */,
+				0C001A091CAF91FB00CD29EC /* Assets.xcassets in Resources */,
+				0C001A071CAF91FB00CD29EC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0C1931061CB37D66009EC30A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -235,6 +315,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0C0019F61CAF91FB00CD29EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C001A041CAF91FB00CD29EC /* ViewController.m in Sources */,
+				0C001A011CAF91FB00CD29EC /* AppDelegate.m in Sources */,
+				0C0019FE1CAF91FB00CD29EC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0C1931041CB37D66009EC30A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -259,6 +349,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		0C001A051CAF91FB00CD29EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C001A061CAF91FB00CD29EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0C001A0A1CAF91FB00CD29EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C001A0B1CAF91FB00CD29EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		0C1931141CB37D66009EC30A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,6 +400,28 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0C001A0E1CAF91FB00CD29EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "03-NSURLComponents/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Yuen.-3-NSURLComponents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0C001A0F1CAF91FB00CD29EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "03-NSURLComponents/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Yuen.-3-NSURLComponents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		0C19311D1CB37D66009EC30A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -423,6 +551,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0C001A101CAF91FB00CD29EC /* Build configuration list for PBXNativeTarget "03-NSURLComponents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C001A0E1CAF91FB00CD29EC /* Debug */,
+				0C001A0F1CAF91FB00CD29EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		0C1931031CB37D66009EC30A /* Build configuration list for PBXProject "Objective-C_iOS7PushingTheLimits" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -439,6 +575,7 @@
 				0C1931211CB37D66009EC30A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0C19313F1CB3C1BC009EC30A /* Build configuration list for PBXNativeTarget "03-关联引用" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +584,7 @@
 				0C1931411CB3C1BC009EC30A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
