@@ -17,6 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    /**
+     *  打印结果
+     2016-04-02 13:41:57.764 03-NSURLComponents[3395:234221] www.baidu.com
+     2016-04-02 13:41:57.765 03-NSURLComponents[3395:234221] http://www.jianshu.com
+     */
     NSString *URLString = @"http://www.baidu.com";
     NSURLComponents *components = [NSURLComponents componentsWithString:URLString];
     NSString *host = components.host;
@@ -35,7 +40,32 @@
      */
     NSURL *jsURL = [components URL];
     NSLog(@"%@", jsURL);
-    
+
+    /**
+     *  NSCharacterSet (NSURLUtilities)
+     
+     // Predefined character sets for the six URL components and subcomponents which allow percent encoding. These character sets are passed to -stringByAddingPercentEncodingWithAllowedCharacters:.
+     
+     // Returns a character set containing the characters allowed in an URL's user subcomponent.
+     + (NSCharacterSet *)URLUserAllowedCharacterSet NS_AVAILABLE(10_9, 7_0);
+     
+     // Returns a character set containing the characters allowed in an URL's password subcomponent.
+     + (NSCharacterSet *)URLPasswordAllowedCharacterSet NS_AVAILABLE(10_9, 7_0);
+     
+     // Returns a character set containing the characters allowed in an URL's host subcomponent.
+     + (NSCharacterSet *)URLHostAllowedCharacterSet NS_AVAILABLE(10_9, 7_0);
+     
+     // Returns a character set containing the characters allowed in an URL's path component. ';' is a legal path character, but it is recommended that it be percent-encoded for best compatibility with NSURL (-stringByAddingPercentEncodingWithAllowedCharacters: will percent-encode any ';' characters if you pass the URLPathAllowedCharacterSet).
+     + (NSCharacterSet *)URLPathAllowedCharacterSet NS_AVAILABLE(10_9, 7_0);
+     
+     // Returns a character set containing the characters allowed in an URL's query component.
+     + (NSCharacterSet *)URLQueryAllowedCharacterSet NS_AVAILABLE(10_9, 7_0);
+     
+     // Returns a character set containing the characters allowed in an URL's fragment component.
+     + (NSCharacterSet *)URLFragmentAllowedCharacterSet NS_AVAILABLE(10_9, 7_0);
+     */
+    NSLog(@"%@", [NSCharacterSet URLPathAllowedCharacterSet]);
+
     return YES;
 }
 
