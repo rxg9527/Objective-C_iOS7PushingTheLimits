@@ -77,8 +77,11 @@
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
+    // 裁剪截图
     CGImageRef imageRef = CGImageCreateWithImageInRect(image.CGImage, CGRectMake(self.layer.frame.origin.x * scale, self.layer.frame.origin.y * scale, self.layer.frame.size.width * scale, self.layer.frame.size.height * scale));
     image = [UIImage imageWithCGImage:imageRef];
+    
+    // 添加效果
     image = [image applyBlurWithRadius:50.0f
                              tintColor:[UIColor colorWithRed:0 green:1 blue:0 alpha:0.1]
                  saturationDeltaFactor:2.0f
