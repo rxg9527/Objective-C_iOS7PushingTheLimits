@@ -42,6 +42,9 @@
                             <constraint firstItem="Wmb-P3-noo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v9c-5J-lAr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bgImageView" destination="WnK-hZ-euh" id="ziB-cw-PKm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
