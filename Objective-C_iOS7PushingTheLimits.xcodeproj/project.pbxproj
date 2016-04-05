@@ -15,6 +15,12 @@
 		0C19311B1CB37D66009EC30A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1931191CB37D66009EC30A /* LaunchScreen.storyboard */; };
 		0C1931231CB37DFE009EC30A /* Image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C1931221CB37DFE009EC30A /* Image.jpg */; };
 		0C1931261CB3AD40009EC30A /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1931251CB3AD40009EC30A /* UIImage+ImageEffects.m */; };
+		0C19312F1CB3C1BC009EC30A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C19312E1CB3C1BC009EC30A /* main.m */; };
+		0C1931321CB3C1BC009EC30A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1931311CB3C1BC009EC30A /* AppDelegate.m */; };
+		0C1931351CB3C1BC009EC30A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1931341CB3C1BC009EC30A /* ViewController.m */; };
+		0C1931381CB3C1BC009EC30A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1931361CB3C1BC009EC30A /* Main.storyboard */; };
+		0C19313A1CB3C1BC009EC30A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C1931391CB3C1BC009EC30A /* Assets.xcassets */; };
+		0C19313D1CB3C1BC009EC30A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C19313B1CB3C1BC009EC30A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,10 +37,27 @@
 		0C1931221CB37DFE009EC30A /* Image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Image.jpg; sourceTree = "<group>"; };
 		0C1931241CB3AD40009EC30A /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		0C1931251CB3AD40009EC30A /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		0C19312B1CB3C1BC009EC30A /* 03-关联引用.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "03-关联引用.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C19312E1CB3C1BC009EC30A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C1931301CB3C1BC009EC30A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0C1931311CB3C1BC009EC30A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0C1931331CB3C1BC009EC30A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0C1931341CB3C1BC009EC30A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0C1931371CB3C1BC009EC30A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0C1931391CB3C1BC009EC30A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C19313C1CB3C1BC009EC30A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0C19313E1CB3C1BC009EC30A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0C1931051CB37D66009EC30A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C1931281CB3C1BC009EC30A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,7 +70,8 @@
 		0C1930FF1CB37D66009EC30A = {
 			isa = PBXGroup;
 			children = (
-				0C19310A1CB37D66009EC30A /* Objective-C_iOS7PushingTheLimits */,
+				0C19310A1CB37D66009EC30A /* 02-毛玻璃效果 */,
+				0C19312C1CB3C1BC009EC30A /* 03-关联引用 */,
 				0C1931091CB37D66009EC30A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,11 +80,12 @@
 			isa = PBXGroup;
 			children = (
 				0C1931081CB37D66009EC30A /* Objective-C_iOS7PushingTheLimits.app */,
+				0C19312B1CB3C1BC009EC30A /* 03-关联引用.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0C19310A1CB37D66009EC30A /* Objective-C_iOS7PushingTheLimits */ = {
+		0C19310A1CB37D66009EC30A /* 02-毛玻璃效果 */ = {
 			isa = PBXGroup;
 			children = (
 				0C19310E1CB37D66009EC30A /* AppDelegate.h */,
@@ -72,6 +97,7 @@
 				0C1931221CB37DFE009EC30A /* Image.jpg */,
 				0C19310B1CB37D66009EC30A /* Supporting Files */,
 			);
+			name = "02-毛玻璃效果";
 			path = "Objective-C_iOS7PushingTheLimits";
 			sourceTree = "<group>";
 		};
@@ -83,6 +109,30 @@
 				0C1931191CB37D66009EC30A /* LaunchScreen.storyboard */,
 				0C19311C1CB37D66009EC30A /* Info.plist */,
 				0C19310C1CB37D66009EC30A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C19312C1CB3C1BC009EC30A /* 03-关联引用 */ = {
+			isa = PBXGroup;
+			children = (
+				0C1931301CB3C1BC009EC30A /* AppDelegate.h */,
+				0C1931311CB3C1BC009EC30A /* AppDelegate.m */,
+				0C1931331CB3C1BC009EC30A /* ViewController.h */,
+				0C1931341CB3C1BC009EC30A /* ViewController.m */,
+				0C19312D1CB3C1BC009EC30A /* Supporting Files */,
+			);
+			path = "03-关联引用";
+			sourceTree = "<group>";
+		};
+		0C19312D1CB3C1BC009EC30A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C1931361CB3C1BC009EC30A /* Main.storyboard */,
+				0C1931391CB3C1BC009EC30A /* Assets.xcassets */,
+				0C19313B1CB3C1BC009EC30A /* LaunchScreen.storyboard */,
+				0C19313E1CB3C1BC009EC30A /* Info.plist */,
+				0C19312E1CB3C1BC009EC30A /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -107,6 +157,23 @@
 			productReference = 0C1931081CB37D66009EC30A /* Objective-C_iOS7PushingTheLimits.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0C19312A1CB3C1BC009EC30A /* 03-关联引用 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C19313F1CB3C1BC009EC30A /* Build configuration list for PBXNativeTarget "03-关联引用" */;
+			buildPhases = (
+				0C1931271CB3C1BC009EC30A /* Sources */,
+				0C1931281CB3C1BC009EC30A /* Frameworks */,
+				0C1931291CB3C1BC009EC30A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "03-关联引用";
+			productName = "03-关联引用";
+			productReference = 0C19312B1CB3C1BC009EC30A /* 03-关联引用.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -117,6 +184,9 @@
 				ORGANIZATIONNAME = "Yuen-iMac";
 				TargetAttributes = {
 					0C1931071CB37D66009EC30A = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					0C19312A1CB3C1BC009EC30A = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -135,6 +205,7 @@
 			projectRoot = "";
 			targets = (
 				0C1931071CB37D66009EC30A /* Objective-C_iOS7PushingTheLimits */,
+				0C19312A1CB3C1BC009EC30A /* 03-关联引用 */,
 			);
 		};
 /* End PBXProject section */
@@ -151,6 +222,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0C1931291CB3C1BC009EC30A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C19313D1CB3C1BC009EC30A /* LaunchScreen.storyboard in Resources */,
+				0C19313A1CB3C1BC009EC30A /* Assets.xcassets in Resources */,
+				0C1931381CB3C1BC009EC30A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -162,6 +243,16 @@
 				0C1931131CB37D66009EC30A /* ViewController.m in Sources */,
 				0C1931101CB37D66009EC30A /* AppDelegate.m in Sources */,
 				0C19310D1CB37D66009EC30A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C1931271CB3C1BC009EC30A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C1931351CB3C1BC009EC30A /* ViewController.m in Sources */,
+				0C1931321CB3C1BC009EC30A /* AppDelegate.m in Sources */,
+				0C19312F1CB3C1BC009EC30A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +271,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				0C19311A1CB37D66009EC30A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0C1931361CB3C1BC009EC30A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C1931371CB3C1BC009EC30A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0C19313B1CB3C1BC009EC30A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C19313C1CB3C1BC009EC30A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -291,6 +398,28 @@
 			};
 			name = Release;
 		};
+		0C1931401CB3C1BC009EC30A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "03-关联引用/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Yuen.-3-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0C1931411CB3C1BC009EC30A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "03-关联引用/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Yuen.-3-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -308,6 +437,14 @@
 			buildConfigurations = (
 				0C1931201CB37D66009EC30A /* Debug */,
 				0C1931211CB37D66009EC30A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0C19313F1CB3C1BC009EC30A /* Build configuration list for PBXNativeTarget "03-关联引用" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C1931401CB3C1BC009EC30A /* Debug */,
+				0C1931411CB3C1BC009EC30A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
