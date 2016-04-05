@@ -13,6 +13,8 @@
 		0C1931161CB37D66009EC30A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1931141CB37D66009EC30A /* Main.storyboard */; };
 		0C1931181CB37D66009EC30A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C1931171CB37D66009EC30A /* Assets.xcassets */; };
 		0C19311B1CB37D66009EC30A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1931191CB37D66009EC30A /* LaunchScreen.storyboard */; };
+		0C1931231CB37DFE009EC30A /* Image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C1931221CB37DFE009EC30A /* Image.jpg */; };
+		0C1931261CB3AD40009EC30A /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1931251CB3AD40009EC30A /* UIImage+ImageEffects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		0C1931171CB37D66009EC30A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C19311A1CB37D66009EC30A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C19311C1CB37D66009EC30A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C1931221CB37DFE009EC30A /* Image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Image.jpg; sourceTree = "<group>"; };
+		0C1931241CB3AD40009EC30A /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		0C1931251CB3AD40009EC30A /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +67,9 @@
 				0C19310F1CB37D66009EC30A /* AppDelegate.m */,
 				0C1931111CB37D66009EC30A /* ViewController.h */,
 				0C1931121CB37D66009EC30A /* ViewController.m */,
-				0C1931141CB37D66009EC30A /* Main.storyboard */,
-				0C1931171CB37D66009EC30A /* Assets.xcassets */,
-				0C1931191CB37D66009EC30A /* LaunchScreen.storyboard */,
-				0C19311C1CB37D66009EC30A /* Info.plist */,
+				0C1931241CB3AD40009EC30A /* UIImage+ImageEffects.h */,
+				0C1931251CB3AD40009EC30A /* UIImage+ImageEffects.m */,
+				0C1931221CB37DFE009EC30A /* Image.jpg */,
 				0C19310B1CB37D66009EC30A /* Supporting Files */,
 			);
 			path = "Objective-C_iOS7PushingTheLimits";
@@ -74,6 +78,10 @@
 		0C19310B1CB37D66009EC30A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0C1931141CB37D66009EC30A /* Main.storyboard */,
+				0C1931171CB37D66009EC30A /* Assets.xcassets */,
+				0C1931191CB37D66009EC30A /* LaunchScreen.storyboard */,
+				0C19311C1CB37D66009EC30A /* Info.plist */,
 				0C19310C1CB37D66009EC30A /* main.m */,
 			);
 			name = "Supporting Files";
@@ -139,6 +147,7 @@
 				0C19311B1CB37D66009EC30A /* LaunchScreen.storyboard in Resources */,
 				0C1931181CB37D66009EC30A /* Assets.xcassets in Resources */,
 				0C1931161CB37D66009EC30A /* Main.storyboard in Resources */,
+				0C1931231CB37DFE009EC30A /* Image.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C1931261CB3AD40009EC30A /* UIImage+ImageEffects.m in Sources */,
 				0C1931131CB37D66009EC30A /* ViewController.m in Sources */,
 				0C1931101CB37D66009EC30A /* AppDelegate.m in Sources */,
 				0C19310D1CB37D66009EC30A /* main.m in Sources */,
