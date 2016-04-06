@@ -27,6 +27,9 @@
                                 <state key="normal" title="Button 1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="doSomething:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YVd-EH-gxC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeN-GN-T5v">
                                 <rect key="frame" x="307.5" y="181.5" width="85" height="37"/>
@@ -38,6 +41,9 @@
                                 <state key="normal" title="Button 2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="doSomething:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Krn-Ta-cpd"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Last Button Pressed:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="48u-vI-tz6">
                                 <rect key="frame" x="120.5" y="289.5" width="159" height="21"/>
@@ -68,6 +74,9 @@
                             <constraint firstItem="WK3-FL-FHJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="z2S-0Y-o06"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonLabel" destination="RhI-q2-UAR" id="rKP-1I-dvg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
