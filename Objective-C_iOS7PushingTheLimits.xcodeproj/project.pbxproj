@@ -34,10 +34,20 @@
 		0C19313A1CB3C1BC009EC30A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C1931391CB3C1BC009EC30A /* Assets.xcassets */; };
 		0C19313D1CB3C1BC009EC30A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C19313B1CB3C1BC009EC30A /* LaunchScreen.storyboard */; };
 		0C1E36741CB63B0000300BF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1E36731CB63B0000300BF4 /* main.m */; };
+		0C1E367F1CB63D1400300BF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1E367E1CB63D1400300BF4 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		0C1E366F1CB63B0000300BF4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		0C1E367A1CB63D1400300BF4 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -94,6 +104,8 @@
 		0C19313E1CB3C1BC009EC30A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C1E36711CB63B0000300BF4 /* 03-Base64和百分号编码 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "03-Base64和百分号编码"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C1E36731CB63B0000300BF4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C1E367C1CB63D1400300BF4 /* 03-NSArray_firstObject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "03-NSArray_firstObject"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C1E367E1CB63D1400300BF4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +138,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0C1E366E1CB63B0000300BF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C1E36791CB63D1400300BF4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -191,6 +210,7 @@
 				0C0019FB1CAF91FB00CD29EC /* 03-NSURLComponents */,
 				0C001A161CB0E7D400CD29EC /* 03-CFStringTransform */,
 				0C1E36721CB63B0000300BF4 /* 03-Base64和百分号编码 */,
+				0C1E367D1CB63D1400300BF4 /* 03-NSArray_firstObject */,
 				0C1931091CB37D66009EC30A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -203,6 +223,7 @@
 				0C0019FA1CAF91FB00CD29EC /* 03-NSURLComponents.app */,
 				0C001A151CB0E7D300CD29EC /* 03-CFStringTransform.app */,
 				0C1E36711CB63B0000300BF4 /* 03-Base64和百分号编码 */,
+				0C1E367C1CB63D1400300BF4 /* 03-NSArray_firstObject */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -265,6 +286,14 @@
 				0C1E36731CB63B0000300BF4 /* main.m */,
 			);
 			path = "03-Base64和百分号编码";
+			sourceTree = "<group>";
+		};
+		0C1E367D1CB63D1400300BF4 /* 03-NSArray_firstObject */ = {
+			isa = PBXGroup;
+			children = (
+				0C1E367E1CB63D1400300BF4 /* main.m */,
+			);
+			path = "03-NSArray_firstObject";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +384,23 @@
 			productReference = 0C1E36711CB63B0000300BF4 /* 03-Base64和百分号编码 */;
 			productType = "com.apple.product-type.tool";
 		};
+		0C1E367B1CB63D1400300BF4 /* 03-NSArray_firstObject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C1E36801CB63D1400300BF4 /* Build configuration list for PBXNativeTarget "03-NSArray_firstObject" */;
+			buildPhases = (
+				0C1E36781CB63D1400300BF4 /* Sources */,
+				0C1E36791CB63D1400300BF4 /* Frameworks */,
+				0C1E367A1CB63D1400300BF4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "03-NSArray_firstObject";
+			productName = "03-NSArray_firstObject";
+			productReference = 0C1E367C1CB63D1400300BF4 /* 03-NSArray_firstObject */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -379,6 +425,9 @@
 					0C1E36701CB63B0000300BF4 = {
 						CreatedOnToolsVersion = 7.3;
 					};
+					0C1E367B1CB63D1400300BF4 = {
+						CreatedOnToolsVersion = 7.3;
+					};
 				};
 			};
 			buildConfigurationList = 0C1931031CB37D66009EC30A /* Build configuration list for PBXProject "Objective-C_iOS7PushingTheLimits" */;
@@ -399,6 +448,7 @@
 				0C0019F91CAF91FB00CD29EC /* 03-NSURLComponents */,
 				0C001A141CB0E7D300CD29EC /* 03-CFStringTransform */,
 				0C1E36701CB63B0000300BF4 /* 03-Base64和百分号编码 */,
+				0C1E367B1CB63D1400300BF4 /* 03-NSArray_firstObject */,
 			);
 		};
 /* End PBXProject section */
@@ -494,6 +544,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C1E36741CB63B0000300BF4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C1E36781CB63D1400300BF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C1E367F1CB63D1400300BF4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -757,6 +815,26 @@
 			};
 			name = Release;
 		};
+		0C1E36811CB63D1400300BF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0C1E36821CB63D1400300BF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -810,6 +888,14 @@
 			buildConfigurations = (
 				0C1E36751CB63B0000300BF4 /* Debug */,
 				0C1E36761CB63B0000300BF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0C1E36801CB63D1400300BF4 /* Build configuration list for PBXNativeTarget "03-NSArray_firstObject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C1E36811CB63D1400300BF4 /* Debug */,
+				0C1E36821CB63D1400300BF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
