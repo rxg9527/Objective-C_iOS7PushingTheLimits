@@ -35,6 +35,12 @@
 		0C19313D1CB3C1BC009EC30A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C19313B1CB3C1BC009EC30A /* LaunchScreen.storyboard */; };
 		0C1E36741CB63B0000300BF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1E36731CB63B0000300BF4 /* main.m */; };
 		0C1E367F1CB63D1400300BF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1E367E1CB63D1400300BF4 /* main.m */; };
+		0C491AE31CB6BDFE00E9C24C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C491AE21CB6BDFE00E9C24C /* main.m */; };
+		0C491AE61CB6BDFE00E9C24C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C491AE51CB6BDFE00E9C24C /* AppDelegate.m */; };
+		0C491AE91CB6BDFE00E9C24C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C491AE81CB6BDFE00E9C24C /* ViewController.m */; };
+		0C491AEC1CB6BDFE00E9C24C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C491AEA1CB6BDFE00E9C24C /* Main.storyboard */; };
+		0C491AEE1CB6BDFE00E9C24C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C491AED1CB6BDFE00E9C24C /* Assets.xcassets */; };
+		0C491AF11CB6BDFE00E9C24C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C491AEF1CB6BDFE00E9C24C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -106,6 +112,16 @@
 		0C1E36731CB63B0000300BF4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0C1E367C1CB63D1400300BF4 /* 03-NSArray_firstObject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "03-NSArray_firstObject"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C1E367E1CB63D1400300BF4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C491ADF1CB6BDFE00E9C24C /* 0702-TimeConsuming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "0702-TimeConsuming.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C491AE21CB6BDFE00E9C24C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C491AE41CB6BDFE00E9C24C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0C491AE51CB6BDFE00E9C24C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0C491AE71CB6BDFE00E9C24C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0C491AE81CB6BDFE00E9C24C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0C491AEB1CB6BDFE00E9C24C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0C491AED1CB6BDFE00E9C24C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C491AF01CB6BDFE00E9C24C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0C491AF21CB6BDFE00E9C24C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +161,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0C1E36791CB63D1400300BF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C491ADC1CB6BDFE00E9C24C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -211,6 +234,7 @@
 				0C001A161CB0E7D400CD29EC /* 03-CFStringTransform */,
 				0C1E36721CB63B0000300BF4 /* 03-Base64和百分号编码 */,
 				0C1E367D1CB63D1400300BF4 /* 03-NSArray_firstObject */,
+				0C491AE01CB6BDFE00E9C24C /* 0702-TimeConsuming */,
 				0C1931091CB37D66009EC30A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -224,6 +248,7 @@
 				0C001A151CB0E7D300CD29EC /* 03-CFStringTransform.app */,
 				0C1E36711CB63B0000300BF4 /* 03-Base64和百分号编码 */,
 				0C1E367C1CB63D1400300BF4 /* 03-NSArray_firstObject */,
+				0C491ADF1CB6BDFE00E9C24C /* 0702-TimeConsuming.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -294,6 +319,30 @@
 				0C1E367E1CB63D1400300BF4 /* main.m */,
 			);
 			path = "03-NSArray_firstObject";
+			sourceTree = "<group>";
+		};
+		0C491AE01CB6BDFE00E9C24C /* 0702-TimeConsuming */ = {
+			isa = PBXGroup;
+			children = (
+				0C491AE81CB6BDFE00E9C24C /* ViewController.m */,
+				0C491AEA1CB6BDFE00E9C24C /* Main.storyboard */,
+				0C491AE11CB6BDFE00E9C24C /* Supporting Files */,
+			);
+			path = "0702-TimeConsuming";
+			sourceTree = "<group>";
+		};
+		0C491AE11CB6BDFE00E9C24C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C491AED1CB6BDFE00E9C24C /* Assets.xcassets */,
+				0C491AE41CB6BDFE00E9C24C /* AppDelegate.h */,
+				0C491AE51CB6BDFE00E9C24C /* AppDelegate.m */,
+				0C491AE71CB6BDFE00E9C24C /* ViewController.h */,
+				0C491AEF1CB6BDFE00E9C24C /* LaunchScreen.storyboard */,
+				0C491AF21CB6BDFE00E9C24C /* Info.plist */,
+				0C491AE21CB6BDFE00E9C24C /* main.m */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,6 +450,23 @@
 			productReference = 0C1E367C1CB63D1400300BF4 /* 03-NSArray_firstObject */;
 			productType = "com.apple.product-type.tool";
 		};
+		0C491ADE1CB6BDFE00E9C24C /* 0702-TimeConsuming */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C491AF51CB6BDFE00E9C24C /* Build configuration list for PBXNativeTarget "0702-TimeConsuming" */;
+			buildPhases = (
+				0C491ADB1CB6BDFE00E9C24C /* Sources */,
+				0C491ADC1CB6BDFE00E9C24C /* Frameworks */,
+				0C491ADD1CB6BDFE00E9C24C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "0702-TimeConsuming";
+			productName = "0702-TimeConsuming";
+			productReference = 0C491ADF1CB6BDFE00E9C24C /* 0702-TimeConsuming.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -428,6 +494,9 @@
 					0C1E367B1CB63D1400300BF4 = {
 						CreatedOnToolsVersion = 7.3;
 					};
+					0C491ADE1CB6BDFE00E9C24C = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 0C1931031CB37D66009EC30A /* Build configuration list for PBXProject "Objective-C_iOS7PushingTheLimits" */;
@@ -449,6 +518,7 @@
 				0C001A141CB0E7D300CD29EC /* 03-CFStringTransform */,
 				0C1E36701CB63B0000300BF4 /* 03-Base64和百分号编码 */,
 				0C1E367B1CB63D1400300BF4 /* 03-NSArray_firstObject */,
+				0C491ADE1CB6BDFE00E9C24C /* 0702-TimeConsuming */,
 			);
 		};
 /* End PBXProject section */
@@ -492,6 +562,16 @@
 				0C19313D1CB3C1BC009EC30A /* LaunchScreen.storyboard in Resources */,
 				0C19313A1CB3C1BC009EC30A /* Assets.xcassets in Resources */,
 				0C1931381CB3C1BC009EC30A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C491ADD1CB6BDFE00E9C24C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C491AF11CB6BDFE00E9C24C /* LaunchScreen.storyboard in Resources */,
+				0C491AEE1CB6BDFE00E9C24C /* Assets.xcassets in Resources */,
+				0C491AEC1CB6BDFE00E9C24C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +632,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C1E367F1CB63D1400300BF4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C491ADB1CB6BDFE00E9C24C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C491AE91CB6BDFE00E9C24C /* ViewController.m in Sources */,
+				0C491AE61CB6BDFE00E9C24C /* AppDelegate.m in Sources */,
+				0C491AE31CB6BDFE00E9C24C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,6 +708,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				0C19313C1CB3C1BC009EC30A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0C491AEA1CB6BDFE00E9C24C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C491AEB1CB6BDFE00E9C24C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0C491AEF1CB6BDFE00E9C24C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C491AF01CB6BDFE00E9C24C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -835,6 +941,32 @@
 			};
 			name = Release;
 		};
+		0C491AF31CB6BDFE00E9C24C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "0702-TimeConsuming/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Yuen.-702-TimeConsuming";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0C491AF41CB6BDFE00E9C24C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "0702-TimeConsuming/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Yuen.-702-TimeConsuming";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -890,12 +1022,22 @@
 				0C1E36761CB63B0000300BF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0C1E36801CB63D1400300BF4 /* Build configuration list for PBXNativeTarget "03-NSArray_firstObject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C1E36811CB63D1400300BF4 /* Debug */,
 				0C1E36821CB63D1400300BF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C491AF51CB6BDFE00E9C24C /* Build configuration list for PBXNativeTarget "0702-TimeConsuming" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C491AF31CB6BDFE00E9C24C /* Debug */,
+				0C491AF41CB6BDFE00E9C24C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
