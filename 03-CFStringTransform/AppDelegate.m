@@ -17,6 +17,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    /**
+     *  创建可变字符串
+     *
+     *  @param maxLength - if not 0, is a hard bound on the length of the string. If 0, there is no limit on the length.
+     */
+    CFMutableStringRef string = CFStringCreateMutableCopy(NULL, 0, CFSTR("Schläger"));
+    /* Perform string transliteration.  The transformation represented by transform is applied to the given range of string, modifying it in place. Only the specified range will be modified, but the transform may look at portions of the string outside that range for context. 
+     NULL range pointer causes the whole string to be transformed. On return, range is modified to reflect the new range corresponding to the original range. 
+     reverse indicates that the inverse transform should be used instead, if it exists. 
+     If the transform is successful, true is returned; if unsuccessful, false. Reasons for the transform being unsuccessful include an invalid transform identifier, or attempting to reverse an irreversible transform.
+     */
+    Boolean isSuccessful = CFStringTransform(string, NULL, kCFStringTransformStripCombiningMarks, false);
+    NSLog(@"%d %@", isSuccessful, string);
+    CFRelease(string);
+    
     return YES;
 }
 
