@@ -26,6 +26,9 @@
                                 <state key="normal" title="Waste Time">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="doSomething:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fUv-Nt-L6s"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -36,6 +39,9 @@
                             <constraint firstItem="piu-jg-hSn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UNN-AZ-Hkk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="piu-jg-hSn" id="fq1-fA-QPq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
