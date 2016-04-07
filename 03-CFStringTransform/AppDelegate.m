@@ -30,9 +30,27 @@
      If the transform is successful, true is returned; if unsuccessful, false. Reasons for the transform being unsuccessful include an invalid transform identifier, or attempting to reverse an irreversible transform.
      */
     Boolean isSuccessful = CFStringTransform(string, NULL, kCFStringTransformStripCombiningMarks, false);
+    /**
+     *  output
+     2016-04-07 14:47:01.482 03-CFStringTransform[791:12881] 1 Schlager
+     */
     NSLog(@"%d %@", isSuccessful, string);
     CFRelease(string);
     
+    
+    
+    /**
+     *  处理非拉丁书写系统
+     *  output
+     2016-04-07 14:47:01.615 03-CFStringTransform[791:12881] 1 rén xíng guài
+     2016-04-07 14:47:01.616 03-CFStringTransform[791:12881] 1 ren xing guai
+     */
+    string = CFStringCreateMutableCopy(NULL, 0, CFSTR("人形怪"));
+    isSuccessful = CFStringTransform(string, NULL, kCFStringTransformToLatin, false);
+    NSLog(@"%d %@", isSuccessful, string);
+    isSuccessful = CFStringTransform(string, NULL, kCFStringTransformStripCombiningMarks, false);
+    NSLog(@"%d %@", isSuccessful, string);
+
     return YES;
 }
 
