@@ -47,6 +47,7 @@
 		0C8EB18A1CB7ED5500142402 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8EB1881CB7ED5500142402 /* Main.storyboard */; };
 		0C8EB18C1CB7ED5500142402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C8EB18B1CB7ED5500142402 /* Assets.xcassets */; };
 		0C8EB18F1CB7ED5500142402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8EB18D1CB7ED5500142402 /* LaunchScreen.storyboard */; };
+		0C8EB1961CB7F45D00142402 /* DelegateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8EB1951CB7F45D00142402 /* DelegateView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -138,6 +139,8 @@
 		0C8EB18B1CB7ED5500142402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C8EB18E1CB7ED5500142402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C8EB1901CB7ED5500142402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C8EB1941CB7F45D00142402 /* DelegateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateView.h; sourceTree = "<group>"; };
+		0C8EB1951CB7F45D00142402 /* DelegateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -375,6 +378,8 @@
 			children = (
 				0C8EB1851CB7ED5500142402 /* ViewController.h */,
 				0C8EB1861CB7ED5500142402 /* ViewController.m */,
+				0C8EB1941CB7F45D00142402 /* DelegateView.h */,
+				0C8EB1951CB7F45D00142402 /* DelegateView.m */,
 				0C8EB17F1CB7ED5500142402 /* Supporting Files */,
 			);
 			path = "080301-Layers";
@@ -732,6 +737,7 @@
 				0C8EB1871CB7ED5500142402 /* ViewController.m in Sources */,
 				0C8EB1841CB7ED5500142402 /* AppDelegate.m in Sources */,
 				0C8EB1811CB7ED5500142402 /* main.m in Sources */,
+				0C8EB1961CB7F45D00142402 /* DelegateView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

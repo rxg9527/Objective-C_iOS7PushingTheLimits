@@ -18,6 +18,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    /**
+     *  直接设置图层CALayer的contents
+     */
     UIImage *image = [UIImage imageNamed:@"pushing"];
     self.view.layer.contentsScale = [UIScreen mainScreen].scale;
     self.view.layer.contentsGravity = kCAGravityCenter; // 类似于contentMode
