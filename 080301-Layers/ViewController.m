@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DelegateView.h"
 
 @interface ViewController ()
 
@@ -25,11 +26,17 @@
     self.view.layer.contentsScale = [UIScreen mainScreen].scale;
     self.view.layer.contentsGravity = kCAGravityCenter; // 类似于contentMode
     self.view.layer.contents = (id)image.CGImage;
+    
+    UIGestureRecognizer *g;
+    g = [[UITapGestureRecognizer alloc]
+         initWithTarget:self
+         action:@selector(performFlip:)];
+    [self.view addGestureRecognizer:g];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)performFlip:(UIGestureRecognizer *)recognizer {
+    UIView *delegateView = [[DelegateView alloc] initWithFrame:self.view.frame];
+    [UIView transitionFromView:self.view toView:delegateView duration:1 options:UIViewAnimationOptionTransitionFlipFromRight completion:nil];
 }
 
 @end

@@ -14,6 +14,14 @@
     if (self = [super initWithFrame:frame]) {
         [self.layer setNeedsDisplay];
         self.layer.contentsScale = [UIScreen mainScreen].scale;
+        /**
+         *  <DelegateView: 0x7fff39dba200; frame = (0 0; 414 736); layer = <CALayer: 0x7fff39dbc340>>
+         */
+        NSLog(@"%@", self.layer.delegate);
+        /**
+         *  {{0, 0}, {414, 736}}
+         */
+        NSLog(@"%@", NSStringFromCGRect(self.layer.bounds));
     }
     return self;
 }
@@ -29,9 +37,20 @@
      tips：UIFontTextStyle会默认对应一个字号，不同的UIFontTextStyle默认的初始字号不同。
      */
     UIFont *font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
+    UIColor *color = [UIColor blueColor];
     
+    NSMutableParagraphStyle *style = [NSMutableParagraphStyle new];
+    [style setAlignment:NSTextAlignmentCenter];
     
+    NSDictionary *attributes = @{NSFontAttributeName: font,
+                                 NSForegroundColorAttributeName: color,
+                                 NSParagraphStyleAttributeName: style};
     
+    NSAttributedString *text = [[NSAttributedString alloc] initWithString:@"Yuen is homesome"
+                                                               attributes:attributes];
+    
+    [text drawInRect:CGRectInset(layer.bounds, 10, 200)];
+    UIGraphicsPopContext();
 }
 
 @end
