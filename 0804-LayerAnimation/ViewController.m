@@ -31,7 +31,7 @@
     self.squareView.frame = CGRectMake(200, 100, 20, 20);
     [self.view addSubview:self.squareView];
 
-    [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(drop:)]];
+    [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(fade:)]];
 }
 
 - (void)drop:(UIGestureRecognizer *)recognizer {
@@ -66,6 +66,14 @@
      */
     self.squareLayer.position = CGPointMake(200, 250);
     self.squareView.center = CGPointMake(100, 250);
+}
+
+- (void)fade:(UITapGestureRecognizer *)g {
+    CABasicAnimation *fade = [CABasicAnimation animationWithKeyPath:@"opacity"];
+    fade.fromValue = @1.0;
+    fade.toValue = @0.0;
+    fade.duration = 1;
+    [self.squareLayer addAnimation:fade forKey:@"fade"];
 }
 
 @end
