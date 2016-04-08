@@ -36,6 +36,10 @@
 
 - (void)drop:(UIGestureRecognizer *)recognizer {
     /**
+     *  禁用动作来阻止动画
+     */
+    [CATransaction setDisableActions:YES];
+    /**
      *  图层动画持续稍大于1/4秒
      */
     self.squareLayer.position = CGPointMake(200, 250);
