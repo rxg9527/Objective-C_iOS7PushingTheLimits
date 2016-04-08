@@ -38,7 +38,13 @@
     /**
      *  禁用动作来阻止动画
      */
-    [CATransaction setDisableActions:YES];
+//    [CATransaction setDisableActions:YES];
+    
+    /**
+     *  更改当前事务，从而修改动画属性
+     */
+    [CATransaction setAnimationDuration:2.0];
+
     /**
      *  图层动画持续稍大于1/4秒
      */
