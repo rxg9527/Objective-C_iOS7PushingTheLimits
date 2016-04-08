@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    UIImage *image = [UIImage imageNamed:@"pushing"];
+    self.view.layer.contentsScale = [UIScreen mainScreen].scale;
+    self.view.layer.contentsGravity = kCAGravityCenter; // 类似于contentMode
+    self.view.layer.contents = (id)image.CGImage;
 }
 
 - (void)didReceiveMemoryWarning {
