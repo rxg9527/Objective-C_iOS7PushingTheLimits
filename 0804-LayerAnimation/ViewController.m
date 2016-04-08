@@ -46,7 +46,23 @@
     [CATransaction setAnimationDuration:2.0];
 
     /**
-     *  图层动画持续稍大于1/4秒
+     *  基本的显式动画 CABasicAnimation
+     动画有它的(key)关键帧、(fromValue)起始值、(toValue)目标值、(timingFunction)时间函数、(duration)持续时间等。它的工作原理是创建图层的多个副本，然后把它们显示出来。
+     */
+    CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"opacity"];
+    anim.fromValue = @1.0;
+    anim.toValue = @0.0;
+    anim.autoreverses = YES;
+    anim.repeatCount = INFINITY;
+    anim.duration = 2.0;
+    [self.squareLayer addAnimation:anim forKey:@"anim"];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4.f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.squareLayer removeAllAnimations];
+    });
+    
+    /**
+     *  图层默认动画持续稍大于1/4秒
      */
     self.squareLayer.position = CGPointMake(200, 250);
     self.squareView.center = CGPointMake(100, 250);
