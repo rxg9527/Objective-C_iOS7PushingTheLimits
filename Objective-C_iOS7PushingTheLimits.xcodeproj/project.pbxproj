@@ -427,8 +427,6 @@
 		0C8EB19C1CB7FAB600142402 /* 0804-LayerAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				0C8EB1A01CB7FAB600142402 /* AppDelegate.h */,
-				0C8EB1A11CB7FAB600142402 /* AppDelegate.m */,
 				0C8EB1A31CB7FAB600142402 /* ViewController.h */,
 				0C8EB1A41CB7FAB600142402 /* ViewController.m */,
 				0C8EB19D1CB7FAB600142402 /* Supporting Files */,
@@ -439,6 +437,8 @@
 		0C8EB19D1CB7FAB600142402 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0C8EB1A01CB7FAB600142402 /* AppDelegate.h */,
+				0C8EB1A11CB7FAB600142402 /* AppDelegate.m */,
 				0C8EB1A61CB7FAB600142402 /* Main.storyboard */,
 				0C8EB1A91CB7FAB600142402 /* Assets.xcassets */,
 				0C8EB1AB1CB7FAB600142402 /* LaunchScreen.storyboard */,
@@ -1216,7 +1216,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "0804-LayerAnimation/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Yuen.-804-LayerAnimation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1229,7 +1229,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "0804-LayerAnimation/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Yuen.-804-LayerAnimation";
 				PRODUCT_NAME = "$(TARGET_NAME)";

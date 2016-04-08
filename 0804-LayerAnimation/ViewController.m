@@ -10,6 +10,9 @@
 
 @interface ViewController ()
 
+@property (nonatomic, strong) CALayer *squareLayer;
+@property (nonatomic, strong) UIView *squareView;
+
 @end
 
 @implementation ViewController
@@ -17,11 +20,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
+    self.squareLayer = [CALayer layer];
+    self.squareLayer.backgroundColor = [UIColor redColor].CGColor;
+    self.squareLayer.frame = CGRectMake(100, 100, 20, 20);
+    [self.view.layer addSublayer:self.squareLayer];
+
+    self.squareView = [UIView new];
+    self.squareView.backgroundColor = [UIColor blueColor];
+    self.squareView.frame = CGRectMake(200, 100, 20, 20);
+    [self.view addSubview:self.squareView];
+
+    [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(drop:)]];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)drop:(UIGestureRecognizer *)recognizer {
+    /**
+     *  图层动画持续稍大于1/4秒
+     */
+    self.squareLayer.position = CGPointMake(200, 250);
+    self.squareView.center = CGPointMake(100, 250);
 }
 
 @end
