@@ -136,13 +136,37 @@ static void testBytesNoCopyNull() {
     free(bytes);
 }
 
+#pragma mark - CFArray
+static void testCFArray() {
+    CFStringRef strings[3] = {CFSTR("One"), CFSTR("Two"), CFSTR("Three")};
+    CFArrayRef array = CFArrayCreate(NULL, (void *)strings, 3, &kCFTypeArrayCallBacks);
+    /**
+     *  output
+     (
+     One,
+     Two,
+     Three
+     )
+     */
+    CFShow(array);
+    CFRelease(array);
+    
+    NSArray *nsArray = @[@"One", @"Two", @"Three"];
+    
+    BOOL result = [(__bridge id)array isEqual:nsArray];
+    printf("Arrays equal: %d\n", result);
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         testCString();
         testPascalString();
+        
         testCopyUTF8String();
         testGetUTF8String();
         testFastUTF8Conversion();
+        
+        testCFArray();
     }
     return 0;
 }
