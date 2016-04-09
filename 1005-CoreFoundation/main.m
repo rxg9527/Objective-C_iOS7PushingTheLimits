@@ -179,6 +179,28 @@ static void testCFDictionary() {
     CFRelease(dict);
 }
 
+#pragma mark - Callbacks
+static void testNRArray() {
+    PrintFunction();
+    CFArrayCallBacks nrCallBacks = kCFTypeArrayCallBacks;
+    nrCallBacks.retain = NULL;
+    nrCallBacks.release = NULL;
+    CFMutableArrayRef nrArray = CFArrayCreateMutable(NULL, 0, &nrCallBacks);
+    CFStringRef string = CFStringCreateWithCString(NULL, "Yuen", kCFStringEncodingUTF8);
+    CFArrayAppendValue(nrArray, string);
+    
+    /**
+     *  output
+     <CFArray 0x100107240 [0x7fff73b82440]>{type = mutable-small, count = 1, values = (
+     0 : Yuen
+     )}
+     */
+    CFShow(nrArray);
+
+    CFRelease(nrArray);
+    CFRelease(string);
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         testCString();
@@ -191,6 +213,8 @@ int main(int argc, const char * argv[]) {
         testCFArray();
         
         testCFDictionary();
+        
+        testNRArray();
     }
     return 0;
 }
