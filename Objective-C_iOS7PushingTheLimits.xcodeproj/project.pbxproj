@@ -75,6 +75,7 @@
 		0C8EB2071CB8EE1200142402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C8EB2061CB8EE1200142402 /* Assets.xcassets */; };
 		0C8EB20A1CB8EE1200142402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8EB2081CB8EE1200142402 /* LaunchScreen.storyboard */; };
 		0C8EB2111CB8EE5C00142402 /* JuliaOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8EB2101CB8EE5C00142402 /* JuliaOperations.m */; };
+		0C8EB2171CB8FADC00142402 /* JuliaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8EB2161CB8FADC00142402 /* JuliaCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -214,6 +215,8 @@
 		0C8EB20B1CB8EE1200142402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C8EB20F1CB8EE5C00142402 /* JuliaOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuliaOperations.h; sourceTree = "<group>"; };
 		0C8EB2101CB8EE5C00142402 /* JuliaOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuliaOperations.m; sourceTree = "<group>"; };
+		0C8EB2151CB8FADC00142402 /* JuliaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuliaCell.h; sourceTree = "<group>"; };
+		0C8EB2161CB8FADC00142402 /* JuliaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuliaCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -591,6 +594,8 @@
 				0C8EB2011CB8EE1200142402 /* ViewController.m */,
 				0C8EB20F1CB8EE5C00142402 /* JuliaOperations.h */,
 				0C8EB2101CB8EE5C00142402 /* JuliaOperations.m */,
+				0C8EB2151CB8FADC00142402 /* JuliaCell.h */,
+				0C8EB2161CB8FADC00142402 /* JuliaCell.m */,
 				0C8EB2031CB8EE1200142402 /* Main.storyboard */,
 				0C8EB1FA1CB8EE1200142402 /* Supporting Files */,
 			);
@@ -1116,6 +1121,7 @@
 				0C8EB2111CB8EE5C00142402 /* JuliaOperations.m in Sources */,
 				0C8EB1FF1CB8EE1200142402 /* AppDelegate.m in Sources */,
 				0C8EB1FC1CB8EE1200142402 /* main.m in Sources */,
+				0C8EB2171CB8FADC00142402 /* JuliaCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1769,6 +1775,7 @@
 				0C8EB20E1CB8EE1200142402 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
