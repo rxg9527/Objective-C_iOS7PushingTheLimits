@@ -138,6 +138,7 @@ static void testBytesNoCopyNull() {
 
 #pragma mark - CFArray
 static void testCFArray() {
+    PrintFunction();
     CFStringRef strings[3] = {CFSTR("One"), CFSTR("Two"), CFSTR("Three")};
     CFArrayRef array = CFArrayCreate(NULL, (void *)strings, 3, &kCFTypeArrayCallBacks);
     /**
@@ -157,6 +158,27 @@ static void testCFArray() {
     printf("Arrays equal: %d\n", result);
 }
 
+#pragma mark - CFDictionary
+static void testCFDictionary() {
+    PrintFunction();
+#define kCount 3
+    CFStringRef keys[kCount] = {CFSTR("One"), CFSTR("Two"), CFSTR("Three")};
+    CFStringRef values[kCount] = {CFSTR("Foo"), CFSTR("Bar"), CFSTR("Baz")};
+    CFDictionaryRef dict = CFDictionaryCreate(NULL, (void *)keys, (void *)values, kCount, &kCFTypeDictionaryKeyCallBacks, &kCFTypeDictionaryValueCallBacks);
+    
+    NSDictionary *nsDict = @{@"One": @"Foo",
+                             @"Two": @"Bar",
+                             @"Three": @"Baz"};
+    BOOL result = [(__bridge id)dict isEqual:nsDict];
+    /**
+     *  output
+     Dicts equal: 1
+     */
+    printf("Dicts equal: %d\n", result);
+    
+    CFRelease(dict);
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         testCString();
@@ -167,6 +189,8 @@ int main(int argc, const char * argv[]) {
         testFastUTF8Conversion();
         
         testCFArray();
+        
+        testCFDictionary();
     }
     return 0;
 }
