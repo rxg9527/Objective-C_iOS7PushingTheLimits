@@ -78,6 +78,7 @@
 		0C8EB2171CB8FADC00142402 /* JuliaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8EB2161CB8FADC00142402 /* JuliaCell.m */; };
 		0C94D18C1CB9136C00BC5EEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C94D18B1CB9136C00BC5EEB /* main.m */; };
 		0C94D1971CB9173700BC5EEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C94D1961CB9173700BC5EEB /* main.m */; };
+		0C94D19D1CB9227200BC5EEB /* MYStringConversion.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C94D19C1CB9227200BC5EEB /* MYStringConversion.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -241,6 +242,8 @@
 		0C94D18B1CB9136C00BC5EEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0C94D1941CB9173700BC5EEB /* 1005-CoreFoundation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "1005-CoreFoundation"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C94D1961CB9173700BC5EEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C94D19B1CB9227200BC5EEB /* MYStringConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYStringConversion.h; sourceTree = "<group>"; };
+		0C94D19C1CB9227200BC5EEB /* MYStringConversion.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MYStringConversion.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -669,6 +672,8 @@
 			isa = PBXGroup;
 			children = (
 				0C94D1961CB9173700BC5EEB /* main.m */,
+				0C94D19B1CB9227200BC5EEB /* MYStringConversion.h */,
+				0C94D19C1CB9227200BC5EEB /* MYStringConversion.c */,
 			);
 			path = "1005-CoreFoundation";
 			sourceTree = "<group>";
@@ -1237,6 +1242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C94D19D1CB9227200BC5EEB /* MYStringConversion.c in Sources */,
 				0C94D1971CB9173700BC5EEB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreFoundation/CoreFoundation.h>
+#import "MYStringConversion.h"
 
 #define PrintFunction() printf("\n%s():\n", __FUNCTION__);
 
@@ -94,6 +95,9 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         testCString();
         testPascalString();
+        testCopyUTF8String();
+        testGetUTF8String();
+        testFastUTF8Conversion();
     }
     return 0;
 }
