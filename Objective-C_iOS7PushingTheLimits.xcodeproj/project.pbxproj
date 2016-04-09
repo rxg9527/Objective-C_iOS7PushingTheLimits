@@ -74,6 +74,7 @@
 		0C8EB2051CB8EE1200142402 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8EB2031CB8EE1200142402 /* Main.storyboard */; };
 		0C8EB2071CB8EE1200142402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C8EB2061CB8EE1200142402 /* Assets.xcassets */; };
 		0C8EB20A1CB8EE1200142402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8EB2081CB8EE1200142402 /* LaunchScreen.storyboard */; };
+		0C8EB2111CB8EE5C00142402 /* JuliaOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8EB2101CB8EE5C00142402 /* JuliaOperations.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -211,6 +212,8 @@
 		0C8EB2061CB8EE1200142402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C8EB2091CB8EE1200142402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C8EB20B1CB8EE1200142402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C8EB20F1CB8EE5C00142402 /* JuliaOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuliaOperations.h; sourceTree = "<group>"; };
+		0C8EB2101CB8EE5C00142402 /* JuliaOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuliaOperations.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -586,6 +589,8 @@
 			children = (
 				0C8EB2001CB8EE1200142402 /* ViewController.h */,
 				0C8EB2011CB8EE1200142402 /* ViewController.m */,
+				0C8EB20F1CB8EE5C00142402 /* JuliaOperations.h */,
+				0C8EB2101CB8EE5C00142402 /* JuliaOperations.m */,
 				0C8EB1FA1CB8EE1200142402 /* Supporting Files */,
 			);
 			path = "0902-JuliaOperation";
@@ -1108,6 +1113,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C8EB2021CB8EE1200142402 /* ViewController.m in Sources */,
+				0C8EB2111CB8EE5C00142402 /* JuliaOperations.m in Sources */,
 				0C8EB1FF1CB8EE1200142402 /* AppDelegate.m in Sources */,
 				0C8EB1FC1CB8EE1200142402 /* main.m in Sources */,
 			);
