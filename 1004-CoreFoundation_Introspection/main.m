@@ -31,7 +31,7 @@ static void testIntrospection() {
      Contents 0x100000f90
      */
     CFShowStr(string);
-    CFRelease(string);
+//    CFRelease(string); // CFSTR 名字中既没有 Create 也没有 Copy，就不需要在结果上调用CFRelease了
     CFRelease(array);
 }
 
