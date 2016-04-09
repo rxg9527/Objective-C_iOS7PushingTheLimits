@@ -64,4 +64,17 @@ unsigned int countOfCores() {
     return cell;
 }
 
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    [self.queue cancelAllOperations];
+    [self useMinimumScales];
+}
+
+- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView {
+    [self useAllScales];
+}
+
+- (void)useMinimumScales {
+    self.scales = [self.scales subarrayWithRange:NSMakeRange(0, 1)];
+}
+
 @end
