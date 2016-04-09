@@ -24,9 +24,16 @@
 //  DEALINGS IN THE SOFTWARE.
 //
 
+/**
+ *  
+ CF_IMPLICIT_BRIDGING_ENABLED
+ CF_IMPLICIT_BRIDGING_DISABLED
+ 在这个块中声明的函数不需要用 __bridge 来转换参数
+ */
 CF_IMPLICIT_BRIDGING_ENABLED
 
 char * MYCFStringCopyUTF8String(CFStringRef aString) CF_RETURNS_NOT_RETAINED;
 const char * MYCFStringGetUTF8String(CFStringRef aString, char **buffer);
 
 CF_IMPLICIT_BRIDGING_DISABLED
+
