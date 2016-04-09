@@ -76,6 +76,7 @@
 		0C8EB20A1CB8EE1200142402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8EB2081CB8EE1200142402 /* LaunchScreen.storyboard */; };
 		0C8EB2111CB8EE5C00142402 /* JuliaOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8EB2101CB8EE5C00142402 /* JuliaOperations.m */; };
 		0C8EB2171CB8FADC00142402 /* JuliaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8EB2161CB8FADC00142402 /* JuliaCell.m */; };
+		0C94D18C1CB9136C00BC5EEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C94D18B1CB9136C00BC5EEB /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -89,6 +90,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		0C1E367A1CB63D1400300BF4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		0C94D1871CB9136C00BC5EEB /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -217,6 +227,8 @@
 		0C8EB2101CB8EE5C00142402 /* JuliaOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuliaOperations.m; sourceTree = "<group>"; };
 		0C8EB2151CB8FADC00142402 /* JuliaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuliaCell.h; sourceTree = "<group>"; };
 		0C8EB2161CB8FADC00142402 /* JuliaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuliaCell.m; sourceTree = "<group>"; };
+		0C94D1891CB9136C00BC5EEB /* 1004-CoreFoundation_Introspection */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "1004-CoreFoundation_Introspection"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C94D18B1CB9136C00BC5EEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +316,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0C94D1861CB9136C00BC5EEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -370,6 +389,7 @@
 				0C8EB1BD1CB8D8E500142402 /* 0806-Decoration */,
 				0C8EB1D81CB8DA7F00142402 /* 0807-Action */,
 				0C8EB1F91CB8EE1200142402 /* 0902-JuliaOperation */,
+				0C94D18A1CB9136C00BC5EEB /* 1004-CoreFoundation_Introspection */,
 				0C1931091CB37D66009EC30A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -389,6 +409,7 @@
 				0C8EB1BC1CB8D8E500142402 /* 0806-Decoration.app */,
 				0C8EB1D71CB8DA7F00142402 /* 0807-Action.app */,
 				0C8EB1F81CB8EE1200142402 /* 0902-JuliaOperation.app */,
+				0C94D1891CB9136C00BC5EEB /* 1004-CoreFoundation_Introspection */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -615,6 +636,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0C94D18A1CB9136C00BC5EEB /* 1004-CoreFoundation_Introspection */ = {
+			isa = PBXGroup;
+			children = (
+				0C94D18B1CB9136C00BC5EEB /* main.m */,
+			);
+			path = "1004-CoreFoundation_Introspection";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -822,6 +851,23 @@
 			productReference = 0C8EB1F81CB8EE1200142402 /* 0902-JuliaOperation.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0C94D1881CB9136C00BC5EEB /* 1004-CoreFoundation_Introspection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C94D18F1CB9136C00BC5EEB /* Build configuration list for PBXNativeTarget "1004-CoreFoundation_Introspection" */;
+			buildPhases = (
+				0C94D1851CB9136C00BC5EEB /* Sources */,
+				0C94D1861CB9136C00BC5EEB /* Frameworks */,
+				0C94D1871CB9136C00BC5EEB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "1004-CoreFoundation_Introspection";
+			productName = "1004-CoreFoundation_Introspection";
+			productReference = 0C94D1891CB9136C00BC5EEB /* 1004-CoreFoundation_Introspection */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -867,6 +913,9 @@
 					0C8EB1F71CB8EE1200142402 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
+					0C94D1881CB9136C00BC5EEB = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 0C1931031CB37D66009EC30A /* Build configuration list for PBXProject "Objective-C_iOS7PushingTheLimits" */;
@@ -894,6 +943,7 @@
 				0C8EB1BB1CB8D8E500142402 /* 0806-Decoration */,
 				0C8EB1D61CB8DA7F00142402 /* 0807-Action */,
 				0C8EB1F71CB8EE1200142402 /* 0902-JuliaOperation */,
+				0C94D1881CB9136C00BC5EEB /* 1004-CoreFoundation_Introspection */,
 			);
 		};
 /* End PBXProject section */
@@ -1122,6 +1172,14 @@
 				0C8EB1FF1CB8EE1200142402 /* AppDelegate.m in Sources */,
 				0C8EB1FC1CB8EE1200142402 /* main.m in Sources */,
 				0C8EB2171CB8FADC00142402 /* JuliaCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C94D1851CB9136C00BC5EEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C94D18C1CB9136C00BC5EEB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1657,6 +1715,26 @@
 			};
 			name = Release;
 		};
+		0C94D18D1CB9136C00BC5EEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0C94D18E1CB9136C00BC5EEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1776,6 +1854,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		0C94D18F1CB9136C00BC5EEB /* Build configuration list for PBXNativeTarget "1004-CoreFoundation_Introspection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C94D18D1CB9136C00BC5EEB /* Debug */,
+				0C94D18E1CB9136C00BC5EEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
