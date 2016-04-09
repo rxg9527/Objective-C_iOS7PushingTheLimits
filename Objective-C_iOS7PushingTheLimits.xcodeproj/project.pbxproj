@@ -54,6 +54,7 @@
 		0C8EB1A81CB7FAB600142402 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8EB1A61CB7FAB600142402 /* Main.storyboard */; };
 		0C8EB1AA1CB7FAB600142402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C8EB1A91CB7FAB600142402 /* Assets.xcassets */; };
 		0C8EB1AD1CB7FAB600142402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8EB1AB1CB7FAB600142402 /* LaunchScreen.storyboard */; };
+		0C8EB1B71CB8D3BC00142402 /* CALayer+RNAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8EB1B61CB8D3BC00142402 /* CALayer+RNAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -157,6 +158,8 @@
 		0C8EB1A91CB7FAB600142402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C8EB1AC1CB7FAB600142402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C8EB1AE1CB7FAB600142402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C8EB1B51CB8D3BC00142402 /* CALayer+RNAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+RNAnimation.h"; sourceTree = "<group>"; };
+		0C8EB1B61CB8D3BC00142402 /* CALayer+RNAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+RNAnimation.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -429,6 +432,8 @@
 			children = (
 				0C8EB1A31CB7FAB600142402 /* ViewController.h */,
 				0C8EB1A41CB7FAB600142402 /* ViewController.m */,
+				0C8EB1B51CB8D3BC00142402 /* CALayer+RNAnimation.h */,
+				0C8EB1B61CB8D3BC00142402 /* CALayer+RNAnimation.m */,
 				0C8EB19D1CB7FAB600142402 /* Supporting Files */,
 			);
 			path = "0804-LayerAnimation";
@@ -825,6 +830,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C8EB1B71CB8D3BC00142402 /* CALayer+RNAnimation.m in Sources */,
 				0C8EB1A51CB7FAB600142402 /* ViewController.m in Sources */,
 				0C8EB1A21CB7FAB600142402 /* AppDelegate.m in Sources */,
 				0C8EB19F1CB7FAB600142402 /* main.m in Sources */,

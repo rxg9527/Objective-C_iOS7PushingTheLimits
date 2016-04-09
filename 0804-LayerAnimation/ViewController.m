@@ -69,6 +69,11 @@
 }
 
 - (void)fade:(UITapGestureRecognizer *)g {
+    /** 
+     *  
+     这段代码会让图形淡出大约1秒钟，之后突然出现。要了解突然出现的原因，需要明了模型层与表示层的区别。模型层是由“真正”CALayer对象的属性定义的。前面的代码没有任何地方修改circleLayer本身。相反，CAAnimation创建了circleLayer的副本对其进行修改，使其变成表示层。它们大致表示会再屏幕上显示什么内容。从技术上讲还存在一个渲染层，真正表示屏幕上要显示的内容，不过它是CoreAnimation内部的功能，你很少会用到它。
+     那么上面的代码中发生了什么？CAAnimation修改了表示层，表示层将被绘制到屏幕，绘制完成后，所有的更发改丢失并由模型层决定新状态，模型层没有改变，因此会恢复一开始的状态。
+     */
     CABasicAnimation *fade = [CABasicAnimation animationWithKeyPath:@"opacity"];
     fade.fromValue = @1.0;
     fade.toValue = @0.0;
