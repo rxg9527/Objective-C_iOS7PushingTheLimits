@@ -49,6 +49,47 @@ static void testPascalString() {
     CFRelease(string);
 }
 
+#pragma mark - Converting to C strings
+static void testCopyUTF8String() {
+    PrintFunction();
+    CFStringRef string = CFSTR("Hello");
+    char * cstring = MYCFStringCopyUTF8String(string);
+    printf("%s\n", cstring);
+    free(cstring);
+}
+
+static void testGetUTF8String() {
+    PrintFunction();
+    CFStringRef strings[3] = { CFSTR("One"), CFSTR("Two"), CFSTR("Three") };
+    char * buffer = NULL;
+    const char * cstring = NULL;
+    
+    for (unsigned i = 0; i < 3; ++i) {
+        cstring = MYCFStringGetUTF8String(strings[i], &buffer);
+        printf("%s\n", cstring);
+    }
+    
+    free(buffer);
+}
+
+static void testFastUTF8Conversion() {
+    PrintFunction();
+    CFStringRef string = CFSTR("Hello");
+    
+    const CFIndex kBufferSize = 1024;
+    char buffer[kBufferSize];
+    CFStringEncoding encoding = kCFStringEncodingUTF8;
+    const char *cstring;
+    cstring = CFStringGetCStringPtr(string, encoding);
+    if (cstring == NULL) {
+        if (CFStringGetCString(string, buffer, kBufferSize, encoding)) {
+            cstring = buffer;
+        }
+    }
+    
+    printf("%s\n", cstring);
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         testCString();
