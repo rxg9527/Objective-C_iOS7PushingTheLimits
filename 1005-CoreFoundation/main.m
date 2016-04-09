@@ -201,6 +201,25 @@ static void testNRArray() {
     CFRelease(string);
 }
 
+static void testCFDictionaryNULL() {
+    PrintFunction();
+    CFMutableDictionaryRef dict = CFDictionaryCreateMutable(NULL, 0, NULL, &kCFTypeDictionaryValueCallBacks);
+    CFDictionarySetValue(dict, NULL, CFSTR("Foo"));
+
+    const void *value;
+    Boolean fooPresent = CFDictionaryGetValueIfPresent(dict, NULL, &value);
+    
+    /**
+     *  output
+     fooPresent: 1
+     values equal: 1
+     */
+    printf("fooPresent: %d\n", fooPresent);
+    printf("values equal: %d\n", CFEqual(value, CFSTR("Foo")));
+    
+    CFRelease(dict);
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         testCString();
@@ -215,6 +234,7 @@ int main(int argc, const char * argv[]) {
         testCFDictionary();
         
         testNRArray();
+        testCFDictionaryNULL();
     }
     return 0;
 }
