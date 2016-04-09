@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "JuliaCell.h"
+#include <sys/sysctl.h>
 
 @interface ViewController ()
 
@@ -21,6 +22,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.queue = [NSOperationQueue new];
+    self.queue.maxConcurrentOperationCount = countOfCores();
+    
+    [self useAllScales];
+}
+
+unsigned int countOfCores() {
+    unsigned int ncpu;
+    size_t len = sizeof(ncpu);
+    sysctlbyname("hw.ncpu", &ncpu, &len, NULL, 0);
+    
+    return ncpu;
+}
+
+- (void)useAllScales {
+    CGFloat maxScale = [[UIScreen mainScreen] scale];
+    NSUInteger kIterations = 6;
+    CGFloat minScale = maxScale/pow(2, kIterations);
+    
+    NSMutableArray *scales = [NSMutableArray new];
+    for (CGFloat scale = minScale; scale <= maxScale; scale *= 2) {
+        [scales addObject:@(scale)];
+    }
+    self.scales = scales;
 }
 
 #pragma mark - UICollectionViewDataSource
@@ -37,4 +63,5 @@
     [cell configureWithSeed:indexPath.row queue:self.queue scales:self.scales];
     return cell;
 }
+
 @end
