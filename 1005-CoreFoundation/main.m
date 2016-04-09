@@ -91,6 +91,51 @@ static void testFastUTF8Conversion() {
     printf("%s\n", cstring);
 }
 
+#pragma mark - String Backing Storage
+static void testBytesNoCopy() {
+    PrintFunction();
+    const char *cstr = "Hello";
+    char *bytes = CFAllocatorAllocate(kCFAllocatorDefault,
+                                      strlen(cstr) + 1, 0);
+    strcpy(bytes, cstr);
+    CFStringRef str = CFStringCreateWithCStringNoCopy(kCFAllocatorDefault, bytes,
+                                                      kCFStringEncodingUTF8,
+                                                      kCFAllocatorDefault);
+    CFShow(str);
+    CFRelease(str);
+}
+
+static void testBytesNoCopyMalloc() {
+    PrintFunction();
+    const char *cstr = "Hello";
+    char *bytes = malloc(strlen(cstr) + 1);
+    strcpy(bytes, cstr);
+    CFStringRef str =
+    CFStringCreateWithCStringNoCopy(NULL, bytes, kCFStringEncodingUTF8,
+                                    kCFAllocatorMalloc);
+    
+    CFShow(str);
+    
+    CFRelease(str);
+}
+
+static void testBytesNoCopyNull() {
+    PrintFunction();
+    const char *cstr = "Hello";
+    char *bytes = malloc(strlen(cstr) + 1);
+    strcpy(bytes, cstr);
+    CFStringRef str =
+    CFStringCreateWithCStringNoCopy(NULL, bytes, kCFStringEncodingUTF8,
+                                    kCFAllocatorNull);
+    CFShow(str);
+    CFRelease(str);
+    
+    // It's still safe to access bytes here, but not str
+    printf("%s\n", bytes);
+    
+    free(bytes);
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         testCString();
