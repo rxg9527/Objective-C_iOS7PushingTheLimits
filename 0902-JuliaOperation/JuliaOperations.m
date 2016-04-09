@@ -46,29 +46,27 @@ complex long double f(const complex long double z,
     const double kScale = 1.5;
     /*配置bits[]保存位图数据*/
     
-    for (NSUInteger y = 0; i < height; i++) {
-        for (NSUInteger i = 0; i < width; i++) {
+    for (NSUInteger y = 0; y < height; y++) {
+        for (NSUInteger x = 0; x < width; x++) {
             if (self.isCancelled) {
                 return;
             }
+            /*计算朱利亚值并更新bits[]
+             每个像素最多可能迭代255次*/
+            NSUInteger iteration = 0;
+            complex long double z = (2.0 * kScale * x)/width - kScale
+            + I*((2.0 * kScale * y)/width - kScale);
+            while (cabsl(z) < blowup && iteration < 256) {
+                z = f(z, c);
+                ++iteration;
+            }
+            
+            NSUInteger offset = (y*width*components) + (x*components);
+            bits[offset+0] = (iteration * self.rScale);
+            bits[offset+1] = (iteration * self.bScale);
+            bits[offset+2] = (iteration * self.gScale);
+            /*计算朱利亚值并更新bits[]*/
         }
-        
-        /*计算朱利亚值并更新bits[]
-         每个像素最多可能迭代255次*/
-        NSUInteger iteration = 0;
-        complex long double z = (2.0 * kScale * x)/width - kScale
-        + I*((2.0 * kScale * y)/width - kScale);
-        while (cabsl(z) < blowup && iteration < 256) {
-            z = f(z, c);
-            ++iteration;
-        }
-        
-        NSUInteger offset = (y*width*components) + (x*components);
-        bits[offset+0] = (iteration * self.rScale);
-        bits[offset+1] = (iteration * self.bScale);
-        bits[offset+2] = (iteration * self.gScale);
-        /*计算朱利亚值并更新bits[]*/
-
     }
     
     /*创建位图并保存在 self.image 中*/

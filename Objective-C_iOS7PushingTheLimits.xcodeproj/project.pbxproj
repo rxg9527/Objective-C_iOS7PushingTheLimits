@@ -591,6 +591,7 @@
 				0C8EB2011CB8EE1200142402 /* ViewController.m */,
 				0C8EB20F1CB8EE5C00142402 /* JuliaOperations.h */,
 				0C8EB2101CB8EE5C00142402 /* JuliaOperations.m */,
+				0C8EB2031CB8EE1200142402 /* Main.storyboard */,
 				0C8EB1FA1CB8EE1200142402 /* Supporting Files */,
 			);
 			path = "0902-JuliaOperation";
@@ -601,7 +602,6 @@
 			children = (
 				0C8EB1FD1CB8EE1200142402 /* AppDelegate.h */,
 				0C8EB1FE1CB8EE1200142402 /* AppDelegate.m */,
-				0C8EB2031CB8EE1200142402 /* Main.storyboard */,
 				0C8EB2061CB8EE1200142402 /* Assets.xcassets */,
 				0C8EB2081CB8EE1200142402 /* LaunchScreen.storyboard */,
 				0C8EB20B1CB8EE1200142402 /* Info.plist */,
