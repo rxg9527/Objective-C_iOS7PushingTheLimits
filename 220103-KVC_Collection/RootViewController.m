@@ -10,4 +10,6 @@
 
 @implementation RootViewController
 
+- (IBAction)performAdd:(UIButton *)sender {
+}
 @end

@@ -47,6 +47,9 @@
                                 <state key="normal" title="Add">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="performAdd:" destination="wvU-JM-AuT" eventType="touchUpInside" id="08o-bI-6IJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PE8-h0-8tE">
                                 <rect key="frame" x="111" y="242" width="72" height="37"/>
@@ -62,6 +65,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="AmI-Wx-Xxx"/>
+                    <connections>
+                        <outlet property="countLabel" destination="yEZ-JI-wYs" id="Z1P-gs-yOb"/>
+                        <outlet property="entryLabel" destination="BBU-5Z-6L6" id="OwQ-5w-9vH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZAg-G5-rZf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

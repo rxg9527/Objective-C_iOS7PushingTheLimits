@@ -10,4 +10,9 @@
 
 @interface RootViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *countLabel;
+@property (weak, nonatomic) IBOutlet UILabel *entryLabel;
+
+- (IBAction)performAdd:(UIButton *)sender;
+
 @end
