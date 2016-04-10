@@ -6,6 +6,6 @@
 //  Copyright © 2016年 Yuen-iMac. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <objc/runtime.h>
 
 void PrintObjectMethods(void);
