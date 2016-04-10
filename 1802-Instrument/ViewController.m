@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ZipTextView.h"
 
 @interface ViewController ()
 
@@ -16,12 +17,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Lorem"
+                                           ofType:@"txt"];
+    
+    ZipTextView *ztView = [[ZipTextView alloc] initWithFrame:self.view.bounds
+                                                        text:[NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil]];
+    [self.view addSubview:ztView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (BOOL)prefersStatusBarHidden {
+    return YES;
 }
 
 @end

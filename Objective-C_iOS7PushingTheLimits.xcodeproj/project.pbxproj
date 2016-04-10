@@ -42,6 +42,8 @@
 		0C3E90091CB9FD2D00C44CC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C3E90081CB9FD2D00C44CC5 /* Assets.xcassets */; };
 		0C3E900C1CB9FD2D00C44CC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C3E900A1CB9FD2D00C44CC5 /* LaunchScreen.storyboard */; };
 		0C3E90121CB9FD9B00C44CC5 /* Lorem.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0C3E90111CB9FD9B00C44CC5 /* Lorem.txt */; };
+		0C3E90151CB9FE6500C44CC5 /* ZipTextView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3E90141CB9FE6500C44CC5 /* ZipTextView1.m */; };
+		0C3E90181CB9FEEB00C44CC5 /* RNTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3E90171CB9FEEB00C44CC5 /* RNTimer.m */; };
 		0C491AE31CB6BDFE00E9C24C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C491AE21CB6BDFE00E9C24C /* main.m */; };
 		0C491AE61CB6BDFE00E9C24C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C491AE51CB6BDFE00E9C24C /* AppDelegate.m */; };
 		0C491AE91CB6BDFE00E9C24C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C491AE81CB6BDFE00E9C24C /* ViewController.m */; };
@@ -88,6 +90,7 @@
 		0C94D19D1CB9227200BC5EEB /* MYStringConversion.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C94D19C1CB9227200BC5EEB /* MYStringConversion.c */; };
 		0C94D1A51CB92FDD00BC5EEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C94D1A41CB92FDD00BC5EEB /* main.m */; };
 		0C94D1AB1CB9300600BC5EEB /* MYStringConversion.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C94D1AA1CB9300600BC5EEB /* MYStringConversion.c */; };
+		0CB4425F1CBA1E0E00F892FA /* ZipTextView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB4425E1CBA1E0E00F892FA /* ZipTextView2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -197,6 +200,10 @@
 		0C3E900B1CB9FD2D00C44CC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C3E900D1CB9FD2D00C44CC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C3E90111CB9FD9B00C44CC5 /* Lorem.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Lorem.txt; sourceTree = "<group>"; };
+		0C3E90131CB9FE6500C44CC5 /* ZipTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipTextView.h; sourceTree = "<group>"; };
+		0C3E90141CB9FE6500C44CC5 /* ZipTextView1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipTextView1.m; sourceTree = "<group>"; };
+		0C3E90161CB9FEEB00C44CC5 /* RNTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNTimer.h; sourceTree = "<group>"; };
+		0C3E90171CB9FEEB00C44CC5 /* RNTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTimer.m; sourceTree = "<group>"; };
 		0C491ADF1CB6BDFE00E9C24C /* 0702-TimeConsuming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "0702-TimeConsuming.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C491AE21CB6BDFE00E9C24C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0C491AE41CB6BDFE00E9C24C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -277,6 +284,7 @@
 		0C94D1A41CB92FDD00BC5EEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0C94D1A91CB9300600BC5EEB /* MYStringConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYStringConversion.h; sourceTree = "<group>"; };
 		0C94D1AA1CB9300600BC5EEB /* MYStringConversion.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MYStringConversion.c; sourceTree = "<group>"; };
+		0CB4425E1CBA1E0E00F892FA /* ZipTextView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipTextView2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -563,6 +571,11 @@
 				0C3E90111CB9FD9B00C44CC5 /* Lorem.txt */,
 				0C3E90021CB9FD2D00C44CC5 /* ViewController.h */,
 				0C3E90031CB9FD2D00C44CC5 /* ViewController.m */,
+				0C3E90161CB9FEEB00C44CC5 /* RNTimer.h */,
+				0C3E90171CB9FEEB00C44CC5 /* RNTimer.m */,
+				0C3E90131CB9FE6500C44CC5 /* ZipTextView.h */,
+				0C3E90141CB9FE6500C44CC5 /* ZipTextView1.m */,
+				0CB4425E1CBA1E0E00F892FA /* ZipTextView2.m */,
 				0C3E8FFC1CB9FD2D00C44CC5 /* Supporting Files */,
 			);
 			path = "1802-Instrument";
@@ -1068,6 +1081,7 @@
 					};
 					0C3E8FF91CB9FD2D00C44CC5 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = ERGP9UFFZ7;
 					};
 					0C491ADE1CB6BDFE00E9C24C = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -1308,9 +1322,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CB4425F1CBA1E0E00F892FA /* ZipTextView2.m in Sources */,
+				0C3E90181CB9FEEB00C44CC5 /* RNTimer.m in Sources */,
 				0C3E90041CB9FD2D00C44CC5 /* ViewController.m in Sources */,
 				0C3E90011CB9FD2D00C44CC5 /* AppDelegate.m in Sources */,
 				0C3E8FFE1CB9FD2D00C44CC5 /* main.m in Sources */,
+				0C3E90151CB9FE6500C44CC5 /* ZipTextView1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1801,11 +1818,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "1802-Instrument/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Yuen.-802-Instrument";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1814,11 +1834,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "1802-Instrument/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Yuen.-802-Instrument";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -2112,6 +2135,7 @@
 				0C3E900F1CB9FD2D00C44CC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0C491AF51CB6BDFE00E9C24C /* Build configuration list for PBXNativeTarget "0702-TimeConsuming" */ = {
 			isa = XCConfigurationList;
