@@ -816,6 +816,7 @@
 			children = (
 				0CB442751CBA39BE00F892FA /* ViewController.h */,
 				0CB442761CBA39BE00F892FA /* ViewController.m */,
+				0CB442781CBA39BE00F892FA /* Main.storyboard */,
 				0CB4426F1CBA39BE00F892FA /* Supporting Files */,
 			);
 			path = "2102-AttributedString";
@@ -826,7 +827,6 @@
 			children = (
 				0CB442721CBA39BE00F892FA /* AppDelegate.h */,
 				0CB442731CBA39BE00F892FA /* AppDelegate.m */,
-				0CB442781CBA39BE00F892FA /* Main.storyboard */,
 				0CB4427B1CBA39BE00F892FA /* Assets.xcassets */,
 				0CB4427D1CBA39BE00F892FA /* LaunchScreen.storyboard */,
 				0CB442801CBA39BE00F892FA /* Info.plist */,
