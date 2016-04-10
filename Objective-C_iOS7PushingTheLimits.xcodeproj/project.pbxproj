@@ -114,6 +114,7 @@
 		0CB442BE1CBA989700F892FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB442BC1CBA989700F892FA /* LaunchScreen.storyboard */; };
 		0CB442C51CBA993200F892FA /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB442C41CBA993200F892FA /* TableViewController.m */; };
 		0CB442C81CBA994500F892FA /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB442C71CBA994500F892FA /* RootViewController.m */; };
+		0CB442CB1CBA9BAE00F892FA /* TwoTimesArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB442CA1CBA9BAE00F892FA /* TwoTimesArray.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -345,6 +346,8 @@
 		0CB442C41CBA993200F892FA /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		0CB442C61CBA994500F892FA /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		0CB442C71CBA994500F892FA /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		0CB442C91CBA9BAE00F892FA /* TwoTimesArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoTimesArray.h; sourceTree = "<group>"; };
+		0CB442CA1CBA9BAE00F892FA /* TwoTimesArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoTimesArray.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -925,6 +928,8 @@
 				0CB442C71CBA994500F892FA /* RootViewController.m */,
 				0CB442C31CBA993200F892FA /* TableViewController.h */,
 				0CB442C41CBA993200F892FA /* TableViewController.m */,
+				0CB442C91CBA9BAE00F892FA /* TwoTimesArray.h */,
+				0CB442CA1CBA9BAE00F892FA /* TwoTimesArray.m */,
 				0CB442AE1CBA989600F892FA /* Supporting Files */,
 			);
 			path = "220103-KVC_Collection";
@@ -1710,6 +1715,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CB442B31CBA989700F892FA /* AppDelegate.m in Sources */,
+				0CB442CB1CBA9BAE00F892FA /* TwoTimesArray.m in Sources */,
 				0CB442C51CBA993200F892FA /* TableViewController.m in Sources */,
 				0CB442C81CBA994500F892FA /* RootViewController.m in Sources */,
 				0CB442B01CBA989600F892FA /* main.m in Sources */,
