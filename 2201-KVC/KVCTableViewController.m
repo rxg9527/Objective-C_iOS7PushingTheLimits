@@ -7,7 +7,21 @@
 //
 
 #import "KVCTableViewController.h"
+#import "KVCTableViewCell.h"
 
 @implementation KVCTableViewController
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 100;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *cellIdentifier = @"KVCTableViewCell";
+    KVCTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell == nil) {
+        cell = [[KVCTableViewCell alloc] initWithReuseIdentifier:cellIdentifier];
+    }
+    return cell;
+}
 
 @end
