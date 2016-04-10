@@ -92,6 +92,7 @@
 		0C94D1AB1CB9300600BC5EEB /* MYStringConversion.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C94D1AA1CB9300600BC5EEB /* MYStringConversion.c */; };
 		0CB4425F1CBA1E0E00F892FA /* ZipTextView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB4425E1CBA1E0E00F892FA /* ZipTextView2.m */; };
 		0CB442621CBA232A00F892FA /* ZipTextView3.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB442611CBA232A00F892FA /* ZipTextView3.m */; };
+		0CB442651CBA2D5E00F892FA /* ZipTextView4.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB442641CBA2D5E00F892FA /* ZipTextView4.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -287,6 +288,7 @@
 		0C94D1AA1CB9300600BC5EEB /* MYStringConversion.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MYStringConversion.c; sourceTree = "<group>"; };
 		0CB4425E1CBA1E0E00F892FA /* ZipTextView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipTextView2.m; sourceTree = "<group>"; };
 		0CB442611CBA232A00F892FA /* ZipTextView3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipTextView3.m; sourceTree = "<group>"; };
+		0CB442641CBA2D5E00F892FA /* ZipTextView4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipTextView4.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -579,6 +581,7 @@
 				0C3E90141CB9FE6500C44CC5 /* ZipTextView1.m */,
 				0CB4425E1CBA1E0E00F892FA /* ZipTextView2.m */,
 				0CB442611CBA232A00F892FA /* ZipTextView3.m */,
+				0CB442641CBA2D5E00F892FA /* ZipTextView4.m */,
 				0C3E8FFC1CB9FD2D00C44CC5 /* Supporting Files */,
 			);
 			path = "1802-Instrument";
@@ -1325,6 +1328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CB442651CBA2D5E00F892FA /* ZipTextView4.m in Sources */,
 				0CB4425F1CBA1E0E00F892FA /* ZipTextView2.m in Sources */,
 				0C3E90181CB9FEEB00C44CC5 /* RNTimer.m in Sources */,
 				0C3E90041CB9FD2D00C44CC5 /* ViewController.m in Sources */,

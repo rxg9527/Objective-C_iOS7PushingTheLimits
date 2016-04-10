@@ -14,7 +14,7 @@
 @interface ZipTextView : UIView
 
 // Modify from 1 to 5 to test each revision
-#define REVISION 3
+#define REVISION 4
 
 - (id)initWithFrame:(CGRect)frame text:(NSString *)text;
 
