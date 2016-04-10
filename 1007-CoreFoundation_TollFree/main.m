@@ -35,6 +35,11 @@ static void testTollFreeReverse() {
     CFRelease(cfArray);
 }
 
+static void testTreeInArray() {
+    PrintFunction();
+    //TODO: 自由桥接
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         testTollFree();
