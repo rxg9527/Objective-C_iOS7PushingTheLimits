@@ -93,6 +93,7 @@
 		0CB4425F1CBA1E0E00F892FA /* ZipTextView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB4425E1CBA1E0E00F892FA /* ZipTextView2.m */; };
 		0CB442621CBA232A00F892FA /* ZipTextView3.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB442611CBA232A00F892FA /* ZipTextView3.m */; };
 		0CB442651CBA2D5E00F892FA /* ZipTextView4.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB442641CBA2D5E00F892FA /* ZipTextView4.m */; };
+		0CB442681CBA318200F892FA /* ZipTextView5.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB442671CBA318200F892FA /* ZipTextView5.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -289,6 +290,7 @@
 		0CB4425E1CBA1E0E00F892FA /* ZipTextView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipTextView2.m; sourceTree = "<group>"; };
 		0CB442611CBA232A00F892FA /* ZipTextView3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipTextView3.m; sourceTree = "<group>"; };
 		0CB442641CBA2D5E00F892FA /* ZipTextView4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipTextView4.m; sourceTree = "<group>"; };
+		0CB442671CBA318200F892FA /* ZipTextView5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipTextView5.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -582,6 +584,7 @@
 				0CB4425E1CBA1E0E00F892FA /* ZipTextView2.m */,
 				0CB442611CBA232A00F892FA /* ZipTextView3.m */,
 				0CB442641CBA2D5E00F892FA /* ZipTextView4.m */,
+				0CB442671CBA318200F892FA /* ZipTextView5.m */,
 				0C3E8FFC1CB9FD2D00C44CC5 /* Supporting Files */,
 			);
 			path = "1802-Instrument";
@@ -1328,6 +1331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CB442681CBA318200F892FA /* ZipTextView5.m in Sources */,
 				0CB442651CBA2D5E00F892FA /* ZipTextView4.m in Sources */,
 				0CB4425F1CBA1E0E00F892FA /* ZipTextView2.m in Sources */,
 				0C3E90181CB9FEEB00C44CC5 /* RNTimer.m in Sources */,
