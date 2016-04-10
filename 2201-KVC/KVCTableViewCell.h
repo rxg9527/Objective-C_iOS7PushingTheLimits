@@ -10,4 +10,11 @@
 
 @interface KVCTableViewCell : UITableViewCell
 
+- (instancetype)initWithReuseIdentifier:(NSString*)identifier;
+
+// 要显示的对象
+@property (nonatomic, readwrite, strong) id object;
+// 要显示的对象的属性名
+@property (nonatomic, readwrite, copy) NSString *property;
+
 @end
