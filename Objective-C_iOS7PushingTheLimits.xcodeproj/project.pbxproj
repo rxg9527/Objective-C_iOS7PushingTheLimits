@@ -115,6 +115,7 @@
 		0CB442C51CBA993200F892FA /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB442C41CBA993200F892FA /* TableViewController.m */; };
 		0CB442C81CBA994500F892FA /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB442C71CBA994500F892FA /* RootViewController.m */; };
 		0CB442CB1CBA9BAE00F892FA /* TwoTimesArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB442CA1CBA9BAE00F892FA /* TwoTimesArray.m */; };
+		0CB442EE1CBAA3FC00F892FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB442ED1CBAA3FC00F892FA /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -155,6 +156,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		0C94D1A01CB92FDD00BC5EEB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		0CB442E91CBAA3FC00F892FA /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -348,6 +358,8 @@
 		0CB442C71CBA994500F892FA /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		0CB442C91CBA9BAE00F892FA /* TwoTimesArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoTimesArray.h; sourceTree = "<group>"; };
 		0CB442CA1CBA9BAE00F892FA /* TwoTimesArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoTimesArray.m; sourceTree = "<group>"; };
+		0CB442EB1CBAA3FC00F892FA /* 220106-KVC_HIgherOrderMessaging */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "220106-KVC_HIgherOrderMessaging"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CB442ED1CBAA3FC00F892FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -484,6 +496,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0CB442E81CBAA3FC00F892FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -557,6 +576,7 @@
 				0CB4426E1CBA39BE00F892FA /* 2102-AttributedString */,
 				0CB442891CBA8F0200F892FA /* 2201-KVC */,
 				0CB442AD1CBA989600F892FA /* 220103-KVC_Collection */,
+				0CB442EC1CBAA3FC00F892FA /* 220106-KVC_HIgherOrderMessaging */,
 				0C1931091CB37D66009EC30A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -583,6 +603,7 @@
 				0CB4426D1CBA39BE00F892FA /* 2102-AttributedString.app */,
 				0CB442881CBA8F0200F892FA /* 2201-KVC.app */,
 				0CB442AC1CBA989600F892FA /* 220103-KVC_Collection.app */,
+				0CB442EB1CBAA3FC00F892FA /* 220106-KVC_HIgherOrderMessaging */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -948,6 +969,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0CB442EC1CBAA3FC00F892FA /* 220106-KVC_HIgherOrderMessaging */ = {
+			isa = PBXGroup;
+			children = (
+				0CB442ED1CBAA3FC00F892FA /* main.m */,
+			);
+			path = "220106-KVC_HIgherOrderMessaging";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1274,6 +1303,23 @@
 			productReference = 0CB442AC1CBA989600F892FA /* 220103-KVC_Collection.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0CB442EA1CBAA3FC00F892FA /* 220106-KVC_HIgherOrderMessaging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CB442F11CBAA3FC00F892FA /* Build configuration list for PBXNativeTarget "220106-KVC_HIgherOrderMessaging" */;
+			buildPhases = (
+				0CB442E71CBAA3FC00F892FA /* Sources */,
+				0CB442E81CBAA3FC00F892FA /* Frameworks */,
+				0CB442E91CBAA3FC00F892FA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "220106-KVC_HIgherOrderMessaging";
+			productName = "220106-KVC_HIgherOrderMessaging";
+			productReference = 0CB442EB1CBAA3FC00F892FA /* 220106-KVC_HIgherOrderMessaging */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1341,6 +1387,9 @@
 					0CB442AB1CBA989600F892FA = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
+					0CB442EA1CBAA3FC00F892FA = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 0C1931031CB37D66009EC30A /* Build configuration list for PBXProject "Objective-C_iOS7PushingTheLimits" */;
@@ -1375,6 +1424,7 @@
 				0CB4426C1CBA39BE00F892FA /* 2102-AttributedString */,
 				0CB442871CBA8F0200F892FA /* 2201-KVC */,
 				0CB442AB1CBA989600F892FA /* 220103-KVC_Collection */,
+				0CB442EA1CBAA3FC00F892FA /* 220106-KVC_HIgherOrderMessaging */,
 			);
 		};
 /* End PBXProject section */
@@ -1719,6 +1769,14 @@
 				0CB442C51CBA993200F892FA /* TableViewController.m in Sources */,
 				0CB442C81CBA994500F892FA /* RootViewController.m in Sources */,
 				0CB442B01CBA989600F892FA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CB442E71CBAA3FC00F892FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CB442EE1CBAA3FC00F892FA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2488,6 +2546,26 @@
 			};
 			name = Release;
 		};
+		0CB442EF1CBAA3FC00F892FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0CB442F01CBAA3FC00F892FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2667,6 +2745,15 @@
 			buildConfigurations = (
 				0CB442C11CBA989700F892FA /* Debug */,
 				0CB442C21CBA989700F892FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CB442F11CBAA3FC00F892FA /* Build configuration list for PBXNativeTarget "220106-KVC_HIgherOrderMessaging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CB442EF1CBAA3FC00F892FA /* Debug */,
+				0CB442F01CBAA3FC00F892FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
