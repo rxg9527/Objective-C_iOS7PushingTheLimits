@@ -45,4 +45,23 @@
     self.label.attributedText = as;
 }
 
+- (IBAction)toggleItalic:(UIButton *)sender {
+    NSMutableAttributedString *as = self.label.attributedText.mutableCopy;
+    
+    [as enumerateAttribute:NSFontAttributeName
+                   inRange:NSMakeRange(0, as.length)
+                   options:0
+                usingBlock:^(id  _Nullable value, NSRange range, BOOL * _Nonnull stop) {
+                    UIFont *font = value;
+                    UIFontDescriptor *descriptor = font.fontDescriptor;
+                    UIFontDescriptorSymbolicTraits traits = descriptor.symbolicTraits;
+                    
+                    UIFontDescriptor * toggledDescriptor = [descriptor fontDescriptorWithSymbolicTraits:traits];
+                    UIFont *italicFont = [UIFont fontWithDescriptor:toggledDescriptor
+                                                               size:15];
+                    [as addAttribute:NSFontAttributeName value:italicFont range:range];
+                }];
+    self.label.attributedText = as;
+}
+
 @end
