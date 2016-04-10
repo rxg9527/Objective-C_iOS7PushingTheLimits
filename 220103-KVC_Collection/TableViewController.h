@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class TwoTimesArray;
+
 @interface TableViewController : UITableViewController
+
+@property (nonatomic, readwrite, strong) TwoTimesArray *array;
 
 @end
